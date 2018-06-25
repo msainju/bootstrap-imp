@@ -1,0 +1,47 @@
+// Variables ***********************
+@background-color : #CCCCCC;
+@background-color-block : #f1ebeb;
+@height: 50px;
+@bg-green: #3f583f;
+
+
+
+// Mixins **************************
+.margin {
+  margin:50px 0 50px 0;
+}
+.b-redius{
+  border-radius:4px;
+}
+
+
+
+.header{
+  background-color: @background-color;
+  height: @height;
+  margin-top: 5px;
+}
+.footer{
+  background-color: @background-color;
+  height: @height + 5;
+  margin-top: 20px;
+}
+.bg-green{
+  background-color: @bg-green;
+}
+
+.graph{
+  .margin();
+  .b-redius;
+  margin-left:110px;
+  background-color: @background-color-block;
+  width:50%;
+}
+
+.table-graph{
+  .margin();
+  .b-redius;
+  margin-left:10px;
+  background-color: @background-color-block;
+  width:49%;
+}
